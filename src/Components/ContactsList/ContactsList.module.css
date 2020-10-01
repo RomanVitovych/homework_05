@@ -1,0 +1,46 @@
+.contactsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.enter {
+    opacity: 0;
+    /* transform: scale(0.1); */
+    transform: translateX(-100%);
+}
+.enterActive {
+    opacity: 1;
+    /* transform: scale(1); */
+    transform: translateX(0);
+    transition: all 250ms linear;
+} 
+
+.exit {
+    opacity: 1;
+    /* transform: scale(1); */
+    transform: translateX(0);
+}
+.exitActive {
+    opacity: 0;
+    /* transform: scale(0.1); */
+    transform: translateX(-100%);
+    transition: all 250ms linear;
+}
+
+
+/* .enter {
+    transform: scale(0);
+  }  
+  .enterActive {
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+  }
+  
+  .exit {
+    transform: scale(1);
+  }
+  .exitActive {
+    transform: scale(0);
+    transition: transform 200ms ease-in-out;
+  } */
