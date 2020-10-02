@@ -62,7 +62,7 @@ class Book extends Component {
         const visibleContacts = this.getVisibleContacts()
         return (
             <>
-                {alert && <AlertMessage alert={alert} /> }               
+                {alert && <AlertMessage /> }               
                 <ContactsForm onAddName={this.addName} />
                 <Filter value={filter} onChangeFilter={this.changeFilter} />
                 <ContactsList contacts={visibleContacts} onRemoveName={this.removeName} />

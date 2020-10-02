@@ -52,7 +52,7 @@ class ContactsForm extends Component {
                     value={number}
                     onChange={this.handlerChange}
                     name='number'
-                    pattern='[0-9]{3}[ -][0-9]{2}[ -][0-9]{2}' 
+                    // pattern='[0-9]{3}[ -][0-9]{2}[ -][0-9]{2}' 
                     required />
                 </label>
                 <br />
