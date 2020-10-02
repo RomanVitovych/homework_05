@@ -3,11 +3,10 @@ import {CSSTransition} from 'react-transition-group';
 import styles from './AlertMessage.module.css';
 
 
-const AlertMessage = () => {
+const AlertMessage = ({alert}) => {
     return (
             <CSSTransition
-            in={true}
-            appear={true}
+            in={alert}           
             timeout={500}
             classNames={styles}
             unmountOnExit >

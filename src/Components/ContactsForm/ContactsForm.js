@@ -36,7 +36,7 @@ class ContactsForm extends Component {
                          Name</p>
                     <input
                     className={styles.inputName}
-                    placeholder=''
+                    placeholder='First name Last name'
                     type='text'
                     value={name}
                     onChange={this.handlerChange}
@@ -47,12 +47,12 @@ class ContactsForm extends Component {
                          Number</p>
                     <input
                     className={styles.inputNumber}
-                    placeholder=''
-                    type='number'
+                    placeholder='000-00-00'
+                    type='tel'
                     value={number}
                     onChange={this.handlerChange}
                     name='number'
-                    // pattern='[0-9]{3}[ -][0-9]{2}[ -][0-9]{2}' 
+                    pattern='[0-9]{3}-[0-9]{2}-[0-9]{2}' 
                     required />
                 </label>
                 <br />

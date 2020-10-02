@@ -35,7 +35,7 @@ class Book extends Component {
         }   else {
             // alert(`Contact already exists!`)
             this.setState({alert: true})
-            setTimeout(() => {this.setState({alert: false})},5000) 
+            setTimeout(() => {this.setState({alert: false})}, 5000) 
         };
     };
 
@@ -62,7 +62,7 @@ class Book extends Component {
         const visibleContacts = this.getVisibleContacts()
         return (
             <>
-                {alert && <AlertMessage /> }               
+                <AlertMessage alert={alert} />              
                 <ContactsForm onAddName={this.addName} />
                 <Filter value={filter} onChangeFilter={this.changeFilter} />
                 <ContactsList contacts={visibleContacts} onRemoveName={this.removeName} />
